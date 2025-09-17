@@ -61,9 +61,10 @@ const CancellationRefundPolicy = () => {
         <h2 className="text-2xl font-semibold mt-8 mb-4">Need Help?</h2>
         <p className="mb-2">For cancellation or refund support, please contact:</p>
         <p className="mb-1 font-medium">K R Pathavan Trading Company</p>
-        <p className="mb-1">📍 No 148/85B, Viruthachalam Road, Jayankondam, Ariyalur, Tamil Nadu – 621802</p>
+        <p className="mb-1">📍 43/A, ULKOTTAI ROAD, PAAPANKULAM, JAYANKONDAM, ARIYALUR, TAMIL NADU - 621802</p>
         <p className="mb-1">📞 Phone: +91 93604 28764</p>
-        <p className="mb-1">📧 Email: info@krpathavan.com</p>
+        <p className="mb-1">📧 Emails: info@krpathavan.com<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;krpathavantradingcompany@gmail.com</p>
         <p className="mb-8">🌐 Website: krpathavan.com</p>
     </PolicyLayout>
   );

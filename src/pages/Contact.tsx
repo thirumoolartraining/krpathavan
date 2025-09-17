@@ -93,9 +93,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-charcoal">Address</h3>
                       <p className="text-muted-foreground">
-                        No 148/ 85B, Viruthachalam Road<br />
-                        Jayakondam, Ariyalur<br />
-                        Tamil Nadu, India - 621802
+                        43/A, ULKOTTAI ROAD,<br />
+                        PAAPANKULAM, JAYANKONDAM,<br />
+                        ARIYALUR, TAMIL NADU - 621802
                       </p>
                     </div>
                   </CardContent>
@@ -122,6 +122,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-charcoal">Email</h3>
                       <p className="text-muted-foreground">info@krpathavan.com</p>
+                      <p className="text-muted-foreground">krpathavantradingcompany@gmail.com</p>
                       <p className="text-sm text-muted-foreground">We reply within 24 hours</p>
                     </div>
                   </CardContent>

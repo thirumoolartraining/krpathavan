@@ -84,9 +84,9 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-off-white/70">
-                  <p>No 148/ 85B, Viruthachalam Road,</p>
-                  <p>Jayakondam, Ariyalur,</p>
-                  <p>Tamil Nadu - 621802</p>
+                  <p>43/A, ULKOTTAI ROAD,</p>
+                  <p>PAAPANKULAM, JAYANKONDAM,</p>
+                  <p>ARIYALUR, TAMIL NADU - 621802</p>
                 </div>
               </div>
               
@@ -100,14 +100,25 @@ const Footer = () => {
                 </a>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-accent" />
-                <a 
-                  href="mailto:info@krpathavan.com"
-                  className="text-sm text-off-white/70 hover:text-accent transition-colors"
-                >
-                  info@krpathavan.com
-                </a>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-accent flex-shrink-0" />
+                  <a 
+                    href="mailto:info@krpathavan.com"
+                    className="text-sm text-off-white/70 hover:text-accent transition-colors"
+                  >
+                    info@krpathavan.com
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-accent flex-shrink-0 opacity-0" />
+                  <a 
+                    href="mailto:krpathavantradingcompany@gmail.com"
+                    className="text-sm text-off-white/70 hover:text-accent transition-colors"
+                  >
+                    krpathavantradingcompany@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
 

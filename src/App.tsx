@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./contexts/CartContext";
 import { CartDrawer } from "./components/CartDrawer";
+import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Tea from "./pages/Tea";
 import Nuts from "./pages/Nuts";
@@ -46,6 +47,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <ScrollToTop />
           <CartDrawer />
         </BrowserRouter>
       </CartProvider>

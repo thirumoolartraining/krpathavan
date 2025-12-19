@@ -74,9 +74,13 @@ export const CartDrawer = () => {
               <div key={item.id} className="flex gap-4 py-4">
                 <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0 overflow-hidden">
                   <img
-                    src={item.image}
+                    src={item.image || '/placeholder.svg'}
                     alt={item.name}
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = '/placeholder.svg';
+                    }}
                   />
                 </div>
                 

@@ -33,7 +33,7 @@ export const Checkout = () => {
     city: '',
     state: 'Tamil Nadu',
     pincode: '',
-    paymentMethod: 'online',
+    paymentMethod: 'cod',
   });
   const [activeStep, setActiveStep] = useState(1);
 
@@ -226,17 +226,13 @@ export const Checkout = () => {
                 ) : (
                   <div className="space-y-6">
                     <div 
-                      className={`border rounded-lg p-4 cursor-pointer transition-colors ${formData.paymentMethod === 'online' ? 'border-primary bg-primary/5' : 'border-muted'}`}
-                      onClick={() => handlePaymentMethodChange('online')}
+                      className="border rounded-lg p-4 cursor-not-allowed opacity-50 border-muted bg-muted/20"
                     >
                       <div className="flex items-center space-x-4">
-                        <div className={`flex items-center justify-center h-6 w-6 rounded-full border ${formData.paymentMethod === 'online' ? 'border-primary bg-primary text-primary-foreground' : 'border-muted'}`}>
-                          {formData.paymentMethod === 'online' && (
-                            <div className="h-2 w-2 rounded-full bg-current" />
-                          )}
+                        <div className="flex items-center justify-center h-6 w-6 rounded-full border border-muted">
                         </div>
                         <div>
-                          <h4 className="font-medium">Online Payment</h4>
+                          <h4 className="font-medium">Online Payment <span className="text-xs text-muted-foreground ml-2">(Temporarily Unavailable)</span></h4>
                         </div>
                         <div className="ml-auto">
                           <CreditCard className="h-5 w-5 text-muted-foreground" />
@@ -279,7 +275,7 @@ export const Checkout = () => {
                     ) : activeStep === 1 ? (
                       'Continue to Payment'
                     ) : (
-                      `Pay ₹${total.toLocaleString()}`
+                      `Pay ₹${(total + (formData.paymentMethod === 'cod' ? 50 : 0)).toLocaleString()}`
                     )}
                   </Button>
                 </div>

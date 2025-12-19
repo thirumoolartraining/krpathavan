@@ -35,7 +35,7 @@ const Hero = () => {
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl accent-font">
                 Premium tea powder, dry fruits, and nuts sourced directly from the heart of Tamil Nadu. 
-                Experience the authentic flavors that have been trusted by families for generations.
+                Experience the authentic flavors that families can trust for years to come.
               </p>
             </div>
 

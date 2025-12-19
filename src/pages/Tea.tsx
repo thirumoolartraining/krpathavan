@@ -131,7 +131,7 @@ const Tea = () => {
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto accent-font">
               Sourced directly from the finest tea gardens of Tamil Nadu. Experience the rich, 
-              authentic flavors that have been cherished by generations.
+              authentic flavors with our fresh approach to traditional blends.
             </p>
           </div>
         </div>

@@ -60,24 +60,21 @@ const testimonials = [
     name: 'Priya Sharma',
     location: 'Chennai',
     text: 'The tea quality is exceptional! Reminds me of my grandmother\'s traditional blend.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face'
+    rating: 5
   },
   {
     id: 2,
     name: 'Rajesh Kumar',
     location: 'Coimbatore', 
     text: 'Best dry fruits in Tamil Nadu. Fresh, authentic, and reasonably priced.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+    rating: 5
   },
   {
     id: 3,
     name: 'Meera Krishnan',
     location: 'Madurai',
     text: 'Bulk orders are so convenient for our family business. Excellent service!',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
+    rating: 5
   }
 ];
 
@@ -95,13 +92,13 @@ const Index = () => {
               From <span className="text-gradient-brand">Ariyalur</span>, with Authenticity
             </h2>
             <p className="text-lg text-muted-foreground accent-font leading-relaxed">
-              For generations, K R Pathavan Trading Company has been the trusted source of premium tea, 
+              K R Pathavan Trading Company has been the trusted source of premium tea, 
               nuts, and dry fruits in Tamil Nadu. Our commitment to quality and authentic flavors has 
               made us a household name across South India.
             </p>
             <div className="flex flex-wrap justify-center gap-8 pt-8">
               <div className="text-center space-y-2">
-                <div className="text-3xl font-bold text-primary">25+</div>
+                <div className="text-3xl font-bold text-primary">1+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center space-y-2">
@@ -207,16 +204,9 @@ const Index = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground italic">"{testimonial.text}"</p>
-                  <div className="flex items-center justify-center space-x-3">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div className="text-left">
-                      <div className="font-semibold text-foreground">{testimonial.name}</div>
-                      <div className="text-sm text-muted-foreground">{testimonial.location}</div>
-                    </div>
+                  <div className="text-center">
+                    <div className="font-semibold text-foreground mb-1">{testimonial.name}</div>
+                    <div className="text-sm text-muted-foreground">{testimonial.location}</div>
                   </div>
                 </CardContent>
               </Card>

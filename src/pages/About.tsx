@@ -35,7 +35,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Started by Mr. K. R. Pathavan in 1999, our company emerged from a simple vision: 
+                  Started by Mr. K. R. Pathavan in 2024, our company emerged from a simple vision: 
                   to bring the authentic taste of Tamil Nadu's finest produce to every household. 
                   What began as a small family business in Ariyalur has grown into a trusted name 
                   across South India.
@@ -91,8 +91,8 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-poppins font-semibold">Authenticity</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We preserve traditional methods and authentic flavors that have been 
-                  cherished for generations in Tamil Nadu.
+                  We preserve traditional methods and authentic flavors that continue to be 
+                  cherished in Tamil Nadu.
                 </p>
               </CardContent>
             </Card>
@@ -143,10 +143,10 @@ const About = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                 <Clock className="w-8 h-8 text-primary" />
               </div>
-              <div className="text-4xl font-bold text-primary">25+</div>
+              <div className="text-4xl font-bold text-primary">1+</div>
               <div className="text-muted-foreground font-medium">Years of Excellence</div>
               <p className="text-sm text-muted-foreground/80">
-                Serving authentic flavors since 1999
+                Serving authentic flavors since 2024
               </p>
             </div>
             

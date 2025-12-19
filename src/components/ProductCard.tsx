@@ -21,7 +21,7 @@ const ProductCard = ({
   name,
   price,
   originalPrice,
-  image = '/placeholder-product.png',
+  image = '/placeholder.svg',
   category,
   inStock,
   isNew,
@@ -60,9 +60,8 @@ const ProductCard = ({
             alt={name}
             className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
             onError={(e) => {
-              // Fallback to placeholder if image fails to load
               const target = e.target as HTMLImageElement;
-              target.src = '/placeholder-product.png';
+              target.src = '/placeholder.svg';
             }}
           />
         )}

@@ -14,7 +14,7 @@ const teaProducts = [
     name: 'Premium Assam Tea Powder',
     price: 180,
     originalPrice: 220,
-    image: '/products/tea/assam-tea.jpg',
+    image: '/products/tea/assam-tea.svg',
     category: 'tea',
     inStock: true,
     isNew: true,
@@ -24,7 +24,7 @@ const teaProducts = [
     id: '2', 
     name: 'Traditional Tamil Tea Blend',
     price: 160,
-    image: '/products/tea/tamil-tea-blend.jpg',
+    image: '/products/tea/tamil-tea-blend.svg',
     category: 'tea',
     inStock: true,
     rating: 4.7
@@ -34,7 +34,7 @@ const teaProducts = [
     name: 'Organic Green Tea Powder', 
     price: 240,
     originalPrice: 280,
-    image: '/products/tea/green-tea.jpg',
+    image: '/products/tea/green-tea.svg',
     category: 'tea',
     inStock: true,
     rating: 4.6
@@ -43,7 +43,7 @@ const teaProducts = [
     id: '4',
     name: 'Cardamom Flavored Tea',
     price: 200,
-    image: '/products/tea/cardamom-tea.jpg',
+    image: '/products/tea/cardamom-tea.svg',
     category: 'tea', 
     inStock: false,
     rating: 4.9
@@ -53,7 +53,7 @@ const teaProducts = [
     name: 'Ginger Tea Blend',
     price: 170,
     originalPrice: 190,
-    image: '/products/tea/ginger-tea.jpg',
+    image: '/products/tea/ginger-tea.svg',
     category: 'tea',
     inStock: true,
     rating: 4.5
@@ -62,6 +62,7 @@ const teaProducts = [
     id: '6',
     name: 'Masala Chai Powder',
     price: 220,
+    image: '/products/tea/masala-chai.svg',
     category: 'tea',
     inStock: true,
     isNew: true,

@@ -9,10 +9,10 @@ import { Search, Filter } from "lucide-react";
 
 const nutsProducts = [
   {
-    id: "n1",
+    id: 'n1',
     name: 'Premium Cashew Nuts',
     price: 450,
-    image: '/products/nuts/cashew-nuts.jpg',
+    image: '/products/nuts/cashew-nuts.svg',
     category: 'nuts',
     inStock: true,
     isNew: true,
@@ -22,7 +22,7 @@ const nutsProducts = [
     id: '3',
     name: 'Pistachio Kernels',
     price: 680,
-    image: '/products/nuts/pistachios.jpg',
+    image: '/products/nuts/pistachios.svg',
     category: 'nuts',
     inStock: true,
     rating: 4.7
@@ -31,7 +31,7 @@ const nutsProducts = [
     id: '4',
     name: 'Walnut Halves',
     price: 480,
-    image: '/products/nuts/walnuts.jpg',
+    image: '/products/nuts/walnuts.svg',
     category: 'nuts',
     inStock: false,
     rating: 4.6
@@ -41,7 +41,7 @@ const nutsProducts = [
     name: 'Premium Mixed Nuts',
     price: 550,
     originalPrice: 600,
-    image: '/products/nuts/mixed-nuts.jpg',
+    image: '/products/nuts/mixed-nuts.svg',
     category: 'nuts',
     inStock: true,
     rating: 4.9
@@ -50,7 +50,7 @@ const nutsProducts = [
     id: '6',
     name: 'Hazelnuts',
     price: 420,
-    image: '/products/nuts/hazelnuts.jpg',
+    image: '/products/nuts/hazelnuts.svg',
     category: 'nuts',
     inStock: true,
     rating: 4.5

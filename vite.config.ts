@@ -3,11 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  // Load env variables based on mode
   const env = loadEnv(mode, process.cwd(), '');
-  
   const isProduction = mode === 'production';
   const base = isProduction ? '/krpathavan/' : '/';
   
@@ -16,8 +13,12 @@ export default defineConfig(({ mode }) => {
     server: {
       host: "::",
       port: 8080,
+      strictPort: true,
     },
-    plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+    plugins: [
+      react(),
+      mode === "development" && componentTagger()
+    ].filter(Boolean),
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
@@ -26,6 +27,7 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'dist',
       assetsDir: 'assets',
+      emptyOutDir: true,
       sourcemap: !isProduction,
       minify: isProduction ? 'esbuild' : false,
       rollupOptions: {
@@ -42,6 +44,9 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       'import.meta.env.BASE_URL': JSON.stringify(base)
-    }
+    },
+    optimizeDeps: {
+      include: ['react', 'react-dom', 'react-router-dom'],
+    },
   };
 });

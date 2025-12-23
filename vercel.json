@@ -27,6 +27,10 @@
       }
     },
     {
+      "src": "/krpathavan/(.*)",
+      "dest": "/krpathavan/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }

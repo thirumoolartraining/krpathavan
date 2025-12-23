@@ -8,8 +8,11 @@ export default defineConfig(({ mode }) => {
   // Load env variables based on mode
   const env = loadEnv(mode, process.cwd(), '');
   
+  const isProduction = mode === 'production';
+  const base = isProduction ? '/krpathavan/' : '/';
+  
   return {
-    base: mode === 'production' ? '/krpathavan/' : '/',
+    base,
     server: {
       host: "::",
       port: 8080,
@@ -23,7 +26,8 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'dist',
       assetsDir: 'assets',
-      sourcemap: mode === 'development',
+      sourcemap: !isProduction,
+      minify: isProduction ? 'esbuild' : false,
       rollupOptions: {
         output: {
           assetFileNames: 'assets/[name]-[hash][extname]',
@@ -36,5 +40,8 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
+    define: {
+      'import.meta.env.BASE_URL': JSON.stringify(base)
+    }
   };
 });

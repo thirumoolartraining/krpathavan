@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const isProduction = mode === 'production';
-  const base = isProduction ? '/krpathavan/' : '/';
+  const base = isProduction ? '/krpathavan' : '/';
   
   return {
     base,

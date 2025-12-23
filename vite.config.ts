@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production';
   
   return {
-    base: isProduction ? '/krpathavan/' : '/',
+    base: '/',
     server: {
       host: "::",
       port: 8080,

@@ -12,7 +12,7 @@ const nutsProducts = [
     id: "n1",
     name: 'Premium Cashew Nuts',
     price: 2200,
-    image: 'images/Cashew Nuts.png',
+    image: '/images/Cashew Nuts.png',
     category: 'nuts',
     inStock: true,
     isNew: true,
@@ -22,7 +22,7 @@ const nutsProducts = [
     id: '3',
     name: 'Pistachio Kernels',
     price: 2300,
-    image: 'images/Pistachio Kernels.png',
+    image: '/images/Pistachio Kernels.png',
     category: 'nuts',
     inStock: true,
     rating: 4.7
@@ -31,7 +31,7 @@ const nutsProducts = [
     id: '4',
     name: 'Walnut Halves',
     price: 2200,
-    image: 'images/Walnut.png',
+    image: '/images/Walnut.png',
     category: 'nuts',
     inStock: false,
     rating: 4.6
@@ -40,7 +40,7 @@ const nutsProducts = [
     id: '5',
     name: 'Premium Mixed Nuts',
     price: 2000,
-    image: 'images/Mixed Nuts.png',
+    image: '/images/Mixed Nuts.png',
     category: 'nuts',
     inStock: true,
     rating: 4.9
@@ -49,7 +49,7 @@ const nutsProducts = [
     id: '6',
     name: 'Hazelnuts',
     price: 1800,
-    image: 'images/Hazelnuts.png',
+    image: '/images/Hazelnuts.png',
     category: 'nuts',
     inStock: true,
     rating: 4.5
@@ -87,7 +87,7 @@ const Nuts = () => {
       } else if (filterBy === "new") {
         matchesFilter = product.isNew === true;
       } else if (filterBy === "sale") {
-        matchesFilter = !!(product as any).originalPrice;
+        matchesFilter = !!(product as { originalPrice?: number }).originalPrice;
       }
 
       return matchesSearch && matchesFilter;

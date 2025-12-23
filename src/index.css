@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* KR Pathavan Trading Company Design System
+All colors MUST be HSL format for proper theming.
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors - Authentic Trading Company Palette */
+    --tea-green: 93 38% 38%;       /* #4B8B3B - Fresh, health */
+    --nut-brown: 28 42% 39%;       /* #8B5E3C - Earthy, grounded */
+    --gold: 44 69% 53%;            /* #E0A82E - Premium accent */
+    --off-white: 50 43% 98%;       /* #FAF9F6 - Background */
+    --charcoal: 0 0% 11%;          /* #1C1C1C - Text, footer */
+    
+    /* Semantic Colors */
+    --background: 50 43% 98%;      /* Off-white background */
+    --foreground: 0 0% 11%;        /* Charcoal text */
+    
+    --primary: 93 38% 38%;         /* Tea green */
+    --primary-foreground: 50 43% 98%;
+    --primary-glow: 93 45% 45%;    /* Lighter tea green */
+    
+    --secondary: 28 42% 39%;       /* Nut brown */
+    --secondary-foreground: 50 43% 98%;
+    
+    --accent: 44 69% 53%;          /* Gold */
+    --accent-foreground: 0 0% 11%;
+    
+    --muted: 50 20% 95%;
+    --muted-foreground: 0 0% 45%;
+    
+    --card: 50 43% 98%;
+    --card-foreground: 0 0% 11%;
+    
+    --popover: 50 43% 98%;
+    --popover-foreground: 0 0% 11%;
+    
+    --border: 50 20% 90%;
+    --input: 50 20% 95%;
+    --ring: 93 38% 38%;
+    
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 50 43% 98%;
+    
+    /* Design System Tokens */
+    --radius-sm: 0.25rem;      /* 4px */
+    --radius: 0.5rem;          /* 8px */
+    --radius-lg: 1rem;         /* 16px */
+    
+    /* Custom Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--accent)), hsl(44 80% 65%));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--secondary)), hsl(28 50% 45%));
+    
+    /* Shadows with Brand Colors */
+    --shadow-tea: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-gold: 0 4px 20px hsl(var(--accent) / 0.3);
+    --shadow-soft: 0 2px 10px hsl(0 0% 0% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-hover: all 0.2s ease-out;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .accent-font {
+    font-family: 'DM Serif Display', serif;
+  }
+}
+
+@layer components {
+  /* Hero Variants */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground;
+    @apply px-8 py-4 rounded-lg font-semibold text-lg;
+    @apply transition-all duration-300 shadow-lg hover:shadow-gold;
+    @apply transform hover:-translate-y-1;
+  }
+  
+  .btn-hero-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+    @apply px-8 py-4 rounded-lg font-semibold text-lg;
+    @apply transition-all duration-300;
+  }
+  
+  /* Product Cards */
+  .product-card {
+    @apply bg-card border border-border rounded-lg overflow-hidden;
+    @apply transition-all duration-300 hover:shadow-tea hover:-translate-y-2;
+  }
+  
+  .product-image {
+    @apply transition-transform duration-500 hover:scale-110;
+  }
+  
+  /* Category Cards */
+  .category-card-tea {
+    @apply bg-gradient-to-br from-primary to-primary-glow text-primary-foreground;
+  }
+  
+  .category-card-nuts {
+    @apply bg-gradient-to-br from-secondary to-[hsl(28_50%_45%)] text-secondary-foreground;
+  }
+  
+  .category-card-gold {
+    @apply bg-gradient-to-br from-accent to-[hsl(44_80%_65%)] text-accent-foreground;
+  }
+  
+  /* Text Gradients */
+  .text-gradient-brand {
+    @apply bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent;
+  }
+  
+  /* Animations */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+  }
+  
+  .fade-in-up {
+    @apply opacity-0 translate-y-4 animate-[fadeInUp_0.6s_ease-out_forwards];
+  }
+  
+  /* Containers */
+  .container-fluid {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+}
+
+@layer utilities {
+  .shadow-tea {
+    box-shadow: var(--shadow-tea);
+  }
+  
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+  
+  .bg-gradient-earth {
+    background: var(--gradient-earth);
+  }
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

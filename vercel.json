@@ -5,16 +5,20 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist",
-        "installCommand": "npm install",
-        "buildCommand": "npm run build"
+        "distDir": "dist"
       }
     }
   ],
   "routes": [
     {
+      "src": "/assets/(.*)",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
       "src": "/krpathavan/(.*)",
-      "dest": "/krpathavan/index.html"
+      "dest": "/index.html"
     },
     {
       "src": "/(.*)",

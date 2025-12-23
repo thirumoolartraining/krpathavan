@@ -13,7 +13,7 @@ const teaProducts = [
     id: '1',
     name: 'Premium Assam Tea Powder',
     price: 700,
-    image: '/images/Premium Assam.png',
+    image: 'images/Premium Assam.png',
     category: 'tea',
     inStock: true,
     isNew: true,
@@ -23,7 +23,7 @@ const teaProducts = [
     id: '2',
     name: 'Traditional Tamil Tea Blend',
     price: 900,
-    image: '/images/Traditional Tamil.png',
+    image: 'images/Traditional Tamil.png',
     category: 'tea',
     inStock: true,
     rating: 4.7
@@ -32,7 +32,7 @@ const teaProducts = [
     id: '3',
     name: 'Organic Green Tea Powder',
     price: 2500,
-    image: '/images/Organic Green.png',
+    image: 'images/Organic Green.png',
     category: 'tea',
     inStock: true,
     rating: 4.6
@@ -41,7 +41,7 @@ const teaProducts = [
     id: '4',
     name: 'Cardamom Flavored Tea',
     price: 650,
-    image: '/images/Cardamom.png',
+    image: 'images/Cardamom.png',
     category: 'tea',
     inStock: false,
     rating: 4.9
@@ -50,7 +50,7 @@ const teaProducts = [
     id: '5',
     name: 'Ginger Tea Blend',
     price: 800,
-    image: '/images/Ginger Tea.png',
+    image: 'images/Ginger Tea.png',
     category: 'tea',
     inStock: true,
     rating: 4.5
@@ -59,7 +59,7 @@ const teaProducts = [
     id: '6',
     name: 'Masala Chai Powder',
     price: 1000,
-    image: '/images/Masala Chai.png',
+    image: 'images/Masala Chai.png',
     category: 'tea',
     inStock: true,
     isNew: true,

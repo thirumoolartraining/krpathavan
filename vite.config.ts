@@ -23,6 +23,7 @@ export default defineConfig(({ mode }) => {
       assetsDir: 'assets',
       sourcemap: !isProduction,
       minify: isProduction ? 'esbuild' : false,
+      assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.svg', '**/*.gif'],
       rollupOptions: {
         output: {
           assetFileNames: 'assets/[name]-[hash][extname]',

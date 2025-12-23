@@ -12,7 +12,7 @@ const dryFruitsProducts = [
     id: "df1",
     name: "Premium Dates",
     price: 1200,
-    image: 'images/Premium Dates.png',
+    image: '/images/Premium Dates.png',
     category: "Dry Fruits",
     inStock: true,
     isNew: true,
@@ -22,7 +22,7 @@ const dryFruitsProducts = [
     id: "df2",
     name: "Dried Figs",
     price: 1800,
-    image: 'images/Dried Figs.png',
+    image: '/images/Dried Figs.png',
     category: "Dry Fruits",
     inStock: true,
     rating: 4.7
@@ -31,7 +31,7 @@ const dryFruitsProducts = [
     id: "df3",
     name: "Raisins",
     price: 700,
-    image: 'images/Raisins.png',
+    image: '/images/Raisins.png',
     category: "Dry Fruits",
     inStock: true,
     rating: 4.6
@@ -40,7 +40,7 @@ const dryFruitsProducts = [
     id: "df4",
     name: "Dried Apricots",
     price: 2000,
-    image: 'images/Dried Apricots.png',
+    image: '/images/Dried Apricots.png',
     category: "Dry Fruits",
     inStock: false,
     rating: 4.8
@@ -49,7 +49,7 @@ const dryFruitsProducts = [
     id: "df5",
     name: "Mixed Dry Fruits",
     price: 2000,
-    image: 'images/Mixed Dry.png',
+    image: '/images/Mixed Dry.png',
     category: "Dry Fruits",
     inStock: true,
     isNew: true,
@@ -59,7 +59,7 @@ const dryFruitsProducts = [
     id: "df6",
     name: "Dried Cranberries",
     price: 1800,
-    image: 'images/Dried Cranberries.png',
+    image: '/images/Dried Cranberries.png',
     category: "Dry Fruits",
     inStock: true,
     rating: 4.4
@@ -97,7 +97,7 @@ const DryFruits = () => {
       } else if (filterBy === "new") {
         matchesFilter = product.isNew === true;
       } else if (filterBy === "sale") {
-        matchesFilter = !!(product as any).originalPrice;
+        matchesFilter = !!(product as { originalPrice?: number }).originalPrice;
       }
 
       return matchesSearch && matchesFilter;

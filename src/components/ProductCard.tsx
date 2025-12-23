@@ -21,7 +21,7 @@ const ProductCard = ({
   name,
   price,
   originalPrice,
-  image = '/placeholder-product.png',
+  image = '/placeholder.svg',
   category,
   inStock,
   isNew,
@@ -62,7 +62,7 @@ const ProductCard = ({
             onError={(e) => {
               // Fallback to placeholder if image fails to load
               const target = e.target as HTMLImageElement;
-              target.src = '/placeholder-product.png';
+              target.src = '/placeholder.svg';
             }}
           />
         )}

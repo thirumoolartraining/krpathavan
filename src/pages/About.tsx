@@ -35,7 +35,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Started by Mr. Karthickrajan Pathavan in 2024, our company emerged from a simple vision: 
+                  Started by Mr. Karthickrajan Kumar in 2024, our company emerged from a simple vision: 
                   to bring the authentic taste of Tamil Nadu's finest produce to every household. 
                   What began as a small family business in Ariyalur has grown into a trusted name 
                   across South India.

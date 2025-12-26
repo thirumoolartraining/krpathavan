@@ -44,40 +44,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Customer Support */}
-          <div className="space-y-4">
-            <h4 className="font-poppins text-lg font-semibold">Customer Support</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link 
-                  to="/contact"
-                  className="text-off-white/70 hover:text-accent transition-colors text-sm"
-                >
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <a 
-                  href="mailto:info@krpathavan.com"
-                  className="text-off-white/70 hover:text-accent transition-colors text-sm"
-                >
-                  Email Support
-                </a>
-              </li>
-              <li>
-                <span className="text-off-white/70 text-sm">
-                  Return Policy
-                </span>
-              </li>
-              <li>
-                <span className="text-off-white/70 text-sm">
-                  Privacy Policy
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
+{/* Contact Info */}
           <div className="space-y-4">
             <h4 className="font-poppins text-lg font-semibold">Get in Touch</h4>
             <div className="space-y-3">
